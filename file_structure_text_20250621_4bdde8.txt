@@ -1,0 +1,16 @@
+novelhub/
+├── index.html              # Main landing page
+├── novel-profile.html      # Novel profile page
+├── content.html            # Chapter content page
+├── css/
+│   └── style.css           # Main stylesheet
+├── js/
+│   └── main.js             # Main JavaScript file
+├── images/                 # Folder for all images
+│   ├── logo.png            # Website logo
+│   ├── novel1.jpg          # Novel cover example
+│   ├── novel2.jpg          # Novel cover example
+│   ├── ad1.jpg             # Advertisement example
+│   ├── ad2.jpg             # Advertisement example
+│   └── ad3.jpg             # Advertisement example
+└── admin-interface.php     # Admin connection endpoint (would be implemented server-side)

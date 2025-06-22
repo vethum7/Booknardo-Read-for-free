@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelHub - Read Free Novels Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="NovelHub Logo" id="website-logo">
+                    <span id="website-name">NovelHub</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Completed</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search novels...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="featured-novels">
+                <h2>Featured Novels</h2>
+                <div class="novel-grid">
+                    <!-- Novel items will be dynamically loaded from admin -->
+                    <div class="novel-item">
+                        <a href="novel-profile.html">
+                            <img src="images/novel1.jpg" alt="Novel Cover">
+                            <h3>The Beginning After The End</h3>
+                            <div class="novel-meta">
+                                <span class="chapter-count">Chapter 350</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="novel-item">
+                        <a href="novel-profile.html">
+                            <img src="images/novel2.jpg" alt="Novel Cover">
+                            <h3>Overgeared</h3>
+                            <div class="novel-meta">
+                                <span class="chapter-count">Chapter 420</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- More novel items -->
+                </div>
+            </section>
+
+            <section class="latest-updates">
+                <h2>Latest Updates</h2>
+                <div class="updates-list">
+                    <div class="update-item">
+                        <a href="content.html">
+                            <img src="images/novel1.jpg" alt="Novel Cover">
+                            <div class="update-info">
+                                <h3>The Beginning After The End</h3>
+                                <p class="chapter-title">Chapter 350: Convergence</p>
+                                <p class="update-time">2 hours ago</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- More update items -->
+                </div>
+            </section>
+
+            <section class="genre-section">
+                <h2>Browse by Genre</h2>
+                <div class="genre-grid">
+                    <a href="#" class="genre-item">Action</a>
+                    <a href="#" class="genre-item">Adventure</a>
+                    <a href="#" class="genre-item">Fantasy</a>
+                    <a href="#" class="genre-item">Romance</a>
+                    <a href="#" class="genre-item">Sci-fi</a>
+                    <a href="#" class="genre-item">Mystery</a>
+                    <!-- More genres -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About NovelHub</h3>
+                    <p>NovelHub is a free online novel reading platform where you can read thousands of novels for free.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Latest Novels</a></li>
+                        <li><a href="#">Popular Novels</a></li>
+                        <li><a href="#">Completed Novels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: support@novelhub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 NovelHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden admin connection (not accessible to readers) -->
+    <div id="admin-connection" style="display: none;" data-admin-url="admin-interface.php"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

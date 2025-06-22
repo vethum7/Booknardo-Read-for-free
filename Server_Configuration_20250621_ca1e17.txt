@@ -1,0 +1,17 @@
+# Prevent directory listing
+Options -Indexes
+
+# PHP settings
+php_value upload_max_filesize 10M
+php_value post_max_size 12M
+
+# Rewrite rules for clean URLs
+RewriteEngine On
+
+# Reader interface
+RewriteRule ^novel/([^/]+)/?$ novel-profile.php?id=$1 [L,QSA]
+RewriteRule ^read/([^/]+)/([^/]+)/?$ content.php?book=$1&chapter=$2 [L,QSA]
+
+# Admin interface
+RewriteRule ^admin/author/([0-9]+)/?$ admin/author-profile.php?id=$1 [L,QSA]
+RewriteRule ^admin/book/([0-9]+)/?$ admin/novel-control.php?book_id=$1 [L,QSA]

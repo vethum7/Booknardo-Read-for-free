@@ -1,0 +1,1 @@
+mysql -u novelhub_admin -p novelhub_admin < database-schema.sql

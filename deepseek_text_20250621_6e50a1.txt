@@ -1,0 +1,17 @@
+admin/
+├── index.php                  # Admin landing page (author list)
+├── author-profile.php         # Author profile page
+├── novel-control.php          # Novel control page
+├── chapter-edit.php           # Chapter editing page
+├── chapter-new.php            # New chapter page
+├── css/
+│   └── admin-style.css        # Admin stylesheet
+├── js/
+│   └── admin-scripts.js       # Admin JavaScript
+├── includes/
+│   ├── auth.php               # Authentication handling
+│   ├── db.php                 # Database connection
+│   ├── header.php             # Admin header
+│   ├── footer.php             # Admin footer
+│   └── functions.php          # Helper functions
+└── admin-interface.php        # API endpoint for reader interface communication
